@@ -1,5 +1,7 @@
 package br.edu.unicesumar.service;
 
+import java.util.List;
+
 import br.edu.unicesumar.dao.CustomerDAO;
 import br.edu.unicesumar.model.Customer;
 

@@ -7,7 +7,7 @@
 <title>List Customer</title>
 </head>
 <body>
-			<h1>List Customer</h1>
-			<hr>
+	<h1>List Customer</h1>
+	<hr>
 </body>
 </html>
