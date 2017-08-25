@@ -12,10 +12,25 @@
 <hr>
 <c:choose>
 	<c:when test="${not empty listCustomer}">
-	Lista cheia
+		<table>
+			<tr>
+				<th>id</th>
+				<th>Name</th>
+				<th>E-mail</th>
+				<th>Phone</th>
+			</tr>
+			<c:forEach var="customer" items="${listCustomer}">
+			<tr>
+				<td>${customer.id}</td>
+				<td>${customer.name}</td>
+				<td>${customer.email}</td>
+				<td>${customer.phone}</td>
+			</tr>				
+			</c:forEach>
+		</table>
 	</c:when>
 	<c:otherwise>
-	Lista vazia
+	Lista vazia!!!!
 	</c:otherwise>
 </c:choose>
 </body>

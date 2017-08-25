@@ -16,6 +16,20 @@ public class CustomerService {
 		//Chamar a DAO
 	}
 	
+	public Customer findCustomer(int id){
+		//Instanciar a DAO e obter uma lista
+		CustomerDAO dao = new CustomerDAO();
+		List<Customer> lista = dao.listAll();
+		
+		
+		for(Customer c : lista){
+			if(c.getId() == id)
+				return c;//Encontrou um cliente
+		}
+		
+		return null;
+	}
+	
 	public List<Customer> listAll(){
 		return dao.listAll();
 	}
