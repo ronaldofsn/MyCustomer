@@ -41,7 +41,7 @@ public class FindCustomerServlet extends HttpServlet {
 		Customer cliente = service.findCustomer(idConvertido);
 		
 		//Salvar na request o 'cliente' obtido
-		//request.set
+		request.setAttribute("client", cliente);
 		
 		String nextPage = "/listCustomer.jsp";
 		
